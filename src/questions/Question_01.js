@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createElement } from 'react'
 import ExpectedImg from '../resources/img/Expected_Question_01.png'
 
 /**
@@ -23,15 +23,18 @@ export default function Question_01() {
 
   // 定数群
   const message = "Hello World!";   // 変更しない
-  const date = "";                  // 本日の日付 (YYYY/MM/DD)
-  const id = "";                    // あなたの学籍番号
+  const date = "2024/09/30";                  // 本日の日付 (YYYY/MM/DD)
+  const id = "02";                    // あなたの学籍番号
 
   return (
     <div>
       <h1 className='question-title'>【問１】React要素の作成</h1>
       <div className='question-content'>
       {/* ↓↓↓ 描画する内容を書く ↓↓↓ */}
-
+    React.createElement = <h1>Hello World!</h1>;
+    <div>
+      <p>2024/09/30</p>
+    </div>
 
       {/* ↑↑↑ 描画する内容を書く ↑↑↑ */}
       </div>
